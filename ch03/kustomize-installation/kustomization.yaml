@@ -7,9 +7,9 @@ bases:
 
 resources:
   - resources/namespace.yaml
-  - servicemonitor/servicemonitor-argocd-server-metrics.yaml
-  - servicemonitor/servicemonitor-argocd-repo-server-metrics.yaml
-  - servicemonitor/servicemonitor-argocd-application-controller-metrics.yaml
+  - resources/servicemonitor-argocd-server-metrics.yaml
+  - resources/servicemonitor-argocd-repo-server-metrics.yaml
+  - resources/servicemonitor-argocd-application-controller-metrics.yaml
 
 patchesStrategicMerge:
   - patches/argocd-cm.yaml
